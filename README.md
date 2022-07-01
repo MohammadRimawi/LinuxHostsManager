@@ -1,2 +1,3 @@
-# LinuxHostsManager
-A tool to manage `/etc/hosts` file in linux
+# Linux Hosts Manager
+
+A tool to manage `/etc/hosts` file in Linux
