@@ -1,9 +1,9 @@
 
 from pprint import pprint
 from re import sub
-from exceptions import DuplicateHost, HostDoesNotExists, InvalidIPv4, InvalidIPv6
-from ip_enum import IP
-from regex_patterns import IPV4_PATTERN, IPV6_PATTERN
+from .exceptions import DuplicateHost, HostDoesNotExists, InvalidIPv4, InvalidIPv6
+from .ip_enum import IP
+from .regex_patterns import IPV4_PATTERN, IPV6_PATTERN
 
 HOSTS_FILE = "hosts"
 
@@ -220,13 +220,14 @@ def insert_line(lines,line_index,line):
 
 
 
-if __name__ == '__main__':
-    lines = read_hosts()
+# if __name__ == '__main__':
+#     print("HIiiiiiiiii")
+#     lines = read_hosts()
 
-    update_host(lines, host_name="rimawihome",host_ip="1.1.1.1",description="RimawiHome redirect ip")
+#     # update_host(lines, host_name="rimawihome",host_ip="1.1.1.1",description="RimawiHome redirect ip")
     
-    list_lines(lines)
+#     list_lines(lines)
 
 
-    # new_hosts = format_lines(lines)
-    # write_hosts(new_hosts)
+#     new_hosts = format_lines(lines)
+#     write_hosts(new_hosts)
